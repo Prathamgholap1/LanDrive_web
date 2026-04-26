@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LANDrive - Fast Local File Sharing</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
+    body { background:#0f172a; color:#fff; }
+    header { padding:20px 40px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { color:#38bdf8; }
+    nav a { margin-left:20px; color:#fff; text-decoration:none; }
+
+    .hero { text-align:center; padding:80px 20px; }
+    .hero h2 { font-size:42px; margin-bottom:20px; }
+    .hero p { color:#cbd5f5; margin-bottom:30px; }
+    .btn {
+      padding:15px 25px;
+      background:#38bdf8;
+      color:#000;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    .section { padding:60px 40px; }
+    .section h3 { text-align:center; margin-bottom:40px; }
+
+    .features { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
+    .card {
+      background:#1e293b;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+    }
+
+    .steps { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .step { background:#1e293b; padding:20px; border-radius:10px; width:200px; text-align:center; }
+
+    .download { text-align:center; }
+
+    footer { text-align:center; padding:20px; background:#020617; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LANDrive</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="work.html">How It Works</a>
+    <a href="#download">Download</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Fast, Secure File Sharing — No Internet Required</h2>
+  <p>Share files across your devices instantly on your local network.</p>
+  <a href="#download"><button class="btn">Download Now</button></a>
+</section>
+
+<section id="features" class="section">
+  <h3>Features</h3>
+  <div class="features">
+    <div class="card">⚡ Zero Latency</div>
+    <div class="card">🔒 100% Private</div>
+    <div class="card">🌐 Cross Device</div>
+    <div class="card">🔄 Real-Time Sync</div>
+    <div class="card">📁 File Management</div>
+  </div>
+</section>
+
+<section id="how" class="section">
+  <h3>How It Works</h3>
+  <div class="steps">
+    <div class="step">1. Install LANDrive</div>
+    <div class="step">2. Open App</div>
+    <div class="step">3. Copy URL</div>
+    <div class="step">4. Access on Any Device</div>
+  </div>
+</section>
+
+<section id="download" class="section download">
+  <h3>Download LANDrive</h3>
+  <p>Version 1.0.0 | Windows 64-bit</p>
+  <br>
+  <a href="#"><button class="btn">Download .exe</button></a>
+</section>
+
+<footer>
+  <p>© 2026 LANDrive | MIT License</p>
+</footer>
+
+</body>
+</html>

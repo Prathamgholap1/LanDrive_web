@@ -1,0 +1,141 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+/* HEADER */
+header {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #020617;
+}
+
+/* LOGO (HEADER) */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logo span {
+  font-size: 22px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* NAV */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* HERO LOGO FIX */
+.hero-logo {
+  width: 250px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+/* HERO TEXT */
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #cbd5f5;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.btn {
+  padding: 14px 25px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 40px;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* STEPS */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.step {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+/* DOWNLOAD */
+.download {
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+}
