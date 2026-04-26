@@ -43,14 +43,26 @@
 
     .section {
       padding: 60px 40px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      animation: fadeInDown 0.6s ease;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
     }
 
     .step {
       background: #1e293b;
-      padding: 25px;
-      margin-bottom: 25px;
+      padding: 30px;
       border-radius: 12px;
       border: 1px solid transparent;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -76,8 +88,15 @@
 
     .step h3 {
       color: #38bdf8;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       transition: all 0.3s ease;
+      font-size: 18px;
+    }
+
+    .step p {
+      color: #cbd5f5;
+      margin-bottom: 15px;
+      line-height: 1.6;
     }
 
     .step:hover h3 {
@@ -96,7 +115,7 @@
 
     .box {
       background: #020617;
-      padding: 20px;
+      padding: 15px;
       border-radius: 10px;
       margin-top: 15px;
       font-size: 14px;
@@ -117,6 +136,17 @@
     @media (max-width: 768px) {
       .section {
         padding: 40px 20px;
+        max-width: 100%;
+      }
+
+      .section h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+        gap: 20px;
       }
 
       .hero h2 {
@@ -124,8 +154,11 @@
       }
 
       .step {
-        padding: 20px;
-        margin-bottom: 20px;
+        padding: 25px 20px;
+      }
+
+      .step h3 {
+        font-size: 16px;
       }
     }
   </style>
@@ -148,99 +181,102 @@
 </section>
 
 <section class="section">
-
-  <div class="step">
-    <h3>Step 1: Install LANDrive</h3>
-    <p>
-      Download and install the LANDrive application on your computer using the provided <span class="highlight">.exe installer</span>.
-    </p>
-    <div class="box">
-      ✔ Works on Windows (Mac/Linux support available)<br>
-      ✔ No internet required after installation
+  <h3>8 Simple Steps to Get Started</h3>
+  
+  <div class="steps">
+    <div class="step">
+      <h3>Step 1: Install LANDrive</h3>
+      <p>
+        Download and install the LANDrive application on your computer using the provided <span class="highlight">.exe installer</span>.
+      </p>
+      <div class="box">
+        ✔ Works on Windows (Mac/Linux support available)<br>
+        ✔ No internet required after installation
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 2: Launch the Application</h3>
-    <p>
-      Once launched, LANDrive automatically:
-    </p>
-    <div class="box">
-      📁 Creates a default shared folder on your system<br>
-      🌐 Starts a local server (default: http://localhost:7070)<br>
-      ⚡ Initializes real-time communication using Socket.io
+    <div class="step">
+      <h3>Step 2: Launch the Application</h3>
+      <p>
+        Once launched, LANDrive automatically:
+      </p>
+      <div class="box">
+        📁 Creates a default shared folder on your system<br>
+        🌐 Starts a local server (default: http://localhost:7070)<br>
+        ⚡ Initializes real-time communication using Socket.io
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 3: Connect Devices on Same Network</h3>
-    <p>
-      Ensure all devices are connected to the <span class="highlight">same WiFi network</span>.
-    </p>
-    <div class="box">
-      Example:<br>
-      http://192.168.1.5:7070<br><br>
-      Open this URL on any phone, laptop, or tablet in the same network.
+    <div class="step">
+      <h3>Step 3: Connect Devices on Same Network</h3>
+      <p>
+        Ensure all devices are connected to the <span class="highlight">same WiFi network</span>.
+      </p>
+      <div class="box">
+        Example:<br>
+        http://192.168.1.5:7070<br><br>
+        Open this URL on any phone, laptop, or tablet in the same network.
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 4: Access via Browser</h3>
-    <p>
-      LANDrive provides a browser-based interface. No app installation required on other devices.
-    </p>
-    <div class="box">
-      ✔ Works on Chrome, Edge, Safari<br>
-      ✔ Mobile + Desktop compatible<br>
-      ✔ Instant UI loading
+    <div class="step">
+      <h3>Step 4: Access via Browser</h3>
+      <p>
+        LANDrive provides a browser-based interface. No app installation required on other devices.
+      </p>
+      <div class="box">
+        ✔ Works on Chrome, Edge, Safari<br>
+        ✔ Mobile + Desktop compatible<br>
+        ✔ Instant UI loading
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 5: Start Sharing Files</h3>
-    <p>
-      You can now perform file operations in real-time:
-    </p>
-    <div class="box">
-      📁 Upload files (Drag & Drop supported)<br>
-      ⬇ Download files instantly<br>
-      ✏ Rename or delete files<br>
-      📊 Switch between Grid & List views
+    <div class="step">
+      <h3>Step 5: Start Sharing Files</h3>
+      <p>
+        You can now perform file operations in real-time:
+      </p>
+      <div class="box">
+        📁 Upload files (Drag & Drop supported)<br>
+        ⬇ Download files instantly<br>
+        ✏ Rename or delete files<br>
+        📊 Switch between Grid & List views
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 6: Real-Time Sync</h3>
-    <p>
-      All connected devices stay in sync using <span class="highlight">Socket.io</span>.
-    </p>
-    <div class="box">
-      🔄 Changes reflect instantly across devices<br>
-      ⚡ No refresh required<br>
-      🚀 Zero latency inside LAN
+    <div class="step">
+      <h3>Step 6: Real-Time Sync</h3>
+      <p>
+        All connected devices stay in sync using <span class="highlight">Socket.io</span>.
+      </p>
+      <div class="box">
+        🔄 Changes reflect instantly across devices<br>
+        ⚡ No refresh required<br>
+        🚀 Zero latency inside LAN
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 7: Customize Shared Folder</h3>
-    <p>
-      You can change the shared directory anytime from settings.
-    </p>
-    <div class="box">
-      ⚙️ Open Settings → Change Folder<br>
-      📂 Select any directory on your system
+    <div class="step">
+      <h3>Step 7: Customize Shared Folder</h3>
+      <p>
+        You can change the shared directory anytime from settings.
+      </p>
+      <div class="box">
+        ⚙️ Open Settings → Change Folder<br>
+        📂 Select any directory on your system
+      </div>
     </div>
-  </div>
 
-  <div class="step">
-    <h3>Step 8: Fully Private & Secure</h3>
-    <p>
-      LANDrive operates only within your local network.
-    </p>
-    <div class="box">
-      🔒 No data leaves your network<br>
-      🚫 No cloud servers<br>
-      🛡️ Complete privacy control
+    <div class="step">
+      <h3>Step 8: Fully Private & Secure</h3>
+      <p>
+        LANDrive operates only within your local network.
+      </p>
+      <div class="box">
+        🔒 No data leaves your network<br>
+        🚫 No cloud servers<br>
+        🛡️ Complete privacy control
+      </div>
     </div>
   </div>
 

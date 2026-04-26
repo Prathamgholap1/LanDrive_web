@@ -15,7 +15,7 @@ body {
 
 /* HEADER */
 header {
-  padding: 15px 40px;
+  padding: 15px 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -229,28 +229,30 @@ nav a:hover::after {
 
 /* STEPS */
 .steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   justify-content: center;
 }
 
 .step {
   background: #1e293b;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
-  width: 220px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid transparent;
   animation: fadeInUp 0.6s ease forwards;
   opacity: 0;
-  text-align: center;
 }
 
 .step:nth-child(1) { animation-delay: 0.1s; }
 .step:nth-child(2) { animation-delay: 0.2s; }
 .step:nth-child(3) { animation-delay: 0.3s; }
 .step:nth-child(4) { animation-delay: 0.4s; }
+.step:nth-child(5) { animation-delay: 0.5s; }
+.step:nth-child(6) { animation-delay: 0.6s; }
+.step:nth-child(7) { animation-delay: 0.7s; }
+.step:nth-child(8) { animation-delay: 0.8s; }
 
 .step:hover {
   background: #334155;
@@ -408,6 +410,7 @@ footer p {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   nav a {
@@ -435,7 +438,6 @@ footer p {
 
   .step {
     width: 100%;
-    min-width: 200px;
   }
 
   .section {
@@ -470,5 +472,13 @@ footer p {
 
   .features {
     grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
   }
 }
