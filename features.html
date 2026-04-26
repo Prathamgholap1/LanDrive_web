@@ -6,12 +6,14 @@
   <title>Features - LANDrive</title>
   <link rel="icon" href="assets/logo3.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
   <style>
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(3, 320px);
+      justify-content: center;
       gap: 30px;
-      margin-top: 40px;
+      margin: 40px auto 0;
     }
 
     .feature-card {
@@ -100,6 +102,13 @@
       font-weight: bold;
     }
 
+    /* Responsive Fix */
+    @media (max-width: 1024px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, 320px);
+      }
+    }
+
     @media (max-width: 768px) {
       .feature-grid {
         grid-template-columns: 1fr;
@@ -107,10 +116,11 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <img src="assets/logo3.png" alt="LANDrive Logo" width="70" >
+  <img src="assets/logo3.png" alt="LANDrive Logo" width="70">
   <a href="index.html" class="logo">
     <span>LANDrive</span>
   </a>
@@ -129,8 +139,9 @@
 
 <section class="section">
   <h3>Core Features</h3>
-  
+
   <div class="feature-grid">
+
     <div class="feature-card">
       <div class="feature-icon">⚡</div>
       <h4>Zero Latency</h4>
@@ -196,12 +207,13 @@
         <li>Multi-file select</li>
       </ul>
     </div>
+
   </div>
 </section>
 
 <section class="section comparison-section">
   <h3>LANDrive vs Cloud Storage</h3>
-  
+
   <table class="comparison-table">
     <thead>
       <tr>
@@ -213,18 +225,13 @@
     <tbody>
       <tr>
         <td>Speed</td>
-        <td class="check">✓ Gigabit speeds</td>
+        <td class="check">✓ High speeds</td>
         <td>Limited by internet</td>
       </tr>
       <tr>
         <td>Privacy</td>
         <td class="check">✓ 100% local</td>
         <td class="cross">✗ Server stored</td>
-      </tr>
-      <tr>
-        <td>Internet Required</td>
-        <td class="check">✓ No</td>
-        <td class="cross">✗ Yes</td>
       </tr>
       <tr>
         <td>Setup Time</td>
