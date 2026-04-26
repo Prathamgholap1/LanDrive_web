@@ -7,44 +7,60 @@
   <link rel="icon" href="assets/logo3.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  
-  <img src="assets/logo3.png" alt="LANDrive Logo" width="70" >
+
+  <!-- ✅ LOGO + TEXT FIXED -->
   <a href="index.html" class="logo">
+    <img src="assets/logo3.png" alt="LANDrive Logo">
     <span>LANDrive</span>
   </a>
+
   <nav>
     <a href="features.html">Features</a>
     <a href="work.html">How It Works</a>
     <a href="download.html">Download</a>
     <a href="about.html">About</a>
   </nav>
+
 </header>
 
 <section class="hero">
   <h2>Fast, Secure File Sharing — No Internet Required</h2>
+<<<<<<< HEAD
   <p>Share files across your devices instantly on your local network. Requires only same network, just pure peer-to-peer power.</p>
+=======
+  <p>Share files across your devices instantly on your local network. No clouds, no servers, just pure peer-to-peer power.</p>
+
+>>>>>>> 90114fe1da0c597314c42d162a2305152d6b8853
   <div class="hero-buttons">
-    <a href="download.html"><button class="btn btn-primary">Download Now</button></a>
-    <a href="work.html"><button class="btn btn-secondary">Learn More</button></a>
+    <a href="download.html">
+      <button class="btn btn-primary">Download Now</button>
+    </a>
+    <a href="work.html">
+      <button class="btn btn-secondary">Learn More</button>
+    </a>
   </div>
 </section>
 
 <section class="section highlights">
   <h3>Why Choose LANDrive?</h3>
+
   <div class="highlight-cards">
     <div class="highlight-card">
       <div class="icon">⚡</div>
       <h4>Lightning Fast</h4>
       <p>Direct local network transfer with zero latency. No internet bottlenecks.</p>
     </div>
+
     <div class="highlight-card">
       <div class="icon">🔒</div>
       <h4>100% Private</h4>
       <p>Your data never leaves your network. Complete privacy and control.</p>
     </div>
+
     <div class="highlight-card">
       <div class="icon">🌐</div>
       <h4>Cross-Platform</h4>
@@ -56,18 +72,26 @@
 <section class="section cta-section">
   <h3>Ready to Experience Instant File Sharing?</h3>
   <p>Join thousands of users who've switched to LANDrive for secure, fast local file sharing.</p>
+
   <div class="section-buttons">
-    <a href="download.html"><button class="btn btn-primary">Get Started</button></a>
-    <a href="features.html"><button class="btn btn-secondary">Explore Features</button></a>
+    <a href="download.html">
+      <button class="btn btn-primary">Get Started</button>
+    </a>
+    <a href="features.html">
+      <button class="btn btn-secondary">Explore Features</button>
+    </a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 LANDrive | MIT License | <a href="about.html">About</a> | <a href="work.html">How It Works</a></p>
+  <p>© 2026 LANDrive | MIT License |
+    <a href="about.html">About</a> |
+    <a href="work.html">How It Works</a>
+  </p>
 </footer>
 
 <script>
-  // Add hover animation to buttons
+  // Button hover animation
   document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('mouseenter', function() {
       this.style.transform = 'translateY(-3px)';
@@ -77,7 +101,7 @@
     });
   });
 
-  // Smooth scroll behavior for internal links
+  // Smooth scroll
   document.querySelectorAll('a').forEach(link => {
     if (link.getAttribute('href').startsWith('#')) {
       link.addEventListener('click', function(e) {
@@ -88,11 +112,6 @@
         }
       });
     }
-  });
-</script>
-
-</body>
-</html>
   });
 </script>
 
